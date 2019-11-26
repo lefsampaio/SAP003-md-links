@@ -1,10 +1,12 @@
 {
   "name": "mdlinks",
   "version": "1.0.0",
-  "description": "## Índice",
+  "description": "criando biblioteca com node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "eslint": "eslint --ext .js lib/ --fix",
+      "pretest": "npm run eslint", 
+      "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,19 @@
   "bugs": {
     "url": "https://github.com/lefsampaio/SAP003-md-links/issues"
   },
-  "homepage": "https://github.com/lefsampaio/SAP003-md-links#readme"
+  "homepage": "https://github.com/lefsampaio/SAP003-md-links#readme",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cli-table": "^0.3.1",
+    "commander": "^2.19.0",
+    "eslint": "^6.7.1",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.2.2",
+    "shelljs": "^0.8.3",
+    "eslint-plugin-jest": "^22.1.2",
+    "jest": "^23.6.0"
+  },
+  "bin": {
+    "mdlinks": "./lib/cli.js"
+  }
 }
