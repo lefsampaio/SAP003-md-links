@@ -5,5 +5,10 @@
 ## Como instalar:
 $ npm install lefsampaio/SAP003-md-links
 
+or
+
+$npm i SAP003-md-links
+
+
 #### Como utilizar
 $ mdlinks ./some/example.md

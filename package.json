@@ -6,7 +6,8 @@
   "scripts": {
     "eslint": "eslint --ext .js lib/ --fix",
     "pretest": "npm run eslint",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "install": "npm-git install"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,14 @@
     "figlet": "^1.2.1",
     "inquirer": "^6.2.2",
     "jest": "^23.6.0",
+    "npm-git-install": "^0.3.0",
     "shelljs": "^0.8.3"
   },
   "bin": {
     "mdlinks": "./lib/cli.js"
+  },
+  "gitDependencies": {
+    "private-package-name": "git@private.git.server:user/repo.git#revision",
+    "public-package-name": "https://github.com/lefsampaio/SAP003-md-links"
   }
 }
