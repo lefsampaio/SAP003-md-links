@@ -4,32 +4,36 @@
   "description": "criando biblioteca com node.js",
   "main": "index.js",
   "scripts": {
-      "eslint": "eslint --ext .js lib/ --fix",
-      "pretest": "npm run eslint", 
-      "test": "jest --coverage"
+    "eslint": "eslint --ext .js lib/ --fix",
+    "pretest": "npm run eslint",
+    "test": "jest --coverage",
+    "install": "npm-git install"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lefsampaio/SAP003-md-links.git"
   },
-  "author": "",
+  "author": "Leticia Sampaio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lefsampaio/SAP003-md-links/issues"
   },
   "homepage": "https://github.com/lefsampaio/SAP003-md-links#readme",
   "dependencies": {
-    "chalk": "^2.4.2",
-    "cli-table": "^0.3.1",
-    "commander": "^2.19.0",
     "eslint": "^6.7.1",
+    "eslint-plugin-jest": "^22.1.2",
     "figlet": "^1.2.1",
     "inquirer": "^6.2.2",
+    "jest": "^23.6.0",
+    "npm-git-install": "^0.3.0",
     "shelljs": "^0.8.3",
-    "eslint-plugin-jest": "^22.1.2",
-    "jest": "^23.6.0"
+    "validate.js": "^0.13.1"
   },
   "bin": {
     "mdlinks": "./lib/cli.js"
+  },
+  "gitDependencies": {
+    "private-package-name": "git@private.git.server:user/repo.git#revision",
+    "public-package-name": "https://github.com/lefsampaio/SAP003-md-links"
   }
 }
