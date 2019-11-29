@@ -7,6 +7,7 @@
     "eslint": "eslint --ext .js lib/ --fix",
     "pretest": "npm run eslint",
     "test": "jest --coverage"
+
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   },
   "bin": {
     "md-links": "./lib/cli.js"
+
   },
   "gitDependencies": {
     "private-package-name": "git@private.git.server:user/repo.git#revision",
