@@ -25,7 +25,7 @@
     "node-fetch": "^2.6.0"
   },
   "bin": {
-    "md-links": "./lib/cli.js"
+    "md-links": "cli.js"
   },
   "gitDependencies": {
     "private-package-name": "git@private.git.server:user/repo.git#revision",
