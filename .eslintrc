@@ -1,12 +1,10 @@
 {
     "env": {
-      "browser": true
+      "node": true,
+      "es6": true
     },
     "parserOptions": {
-      "ecmaVersion": 6
-    },
-    "globals": {
-      "data": false
+      "ecmaVersion": 2018
     },
     "rules": {
       "indent": ["error", 2],
@@ -18,6 +16,6 @@
       "space-before-blocks": ["error", "always"],
       "key-spacing": ["error", { "afterColon": true }],
       "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
-      "no-multiple-empty-lines": ["error", { "max": 1 }],
+      "no-multiple-empty-lines": ["error", { "max": 1 }]
     }
   }
