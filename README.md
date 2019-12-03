@@ -6,4 +6,7 @@
 $ npm install -g lefsampaio/SAP003-md-links
 
 #### Como utilizar
-$ mdlinks ./some/example.md
+$ md-links ./some/example.md
+
+### Para verificar se os links são validos:
+$ md-links ./some/example.md --validate
