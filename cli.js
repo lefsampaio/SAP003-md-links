@@ -7,7 +7,12 @@ const option = process.argv[3];
 mdLinks(path, option)
 
   .then((result) => {
-    console.table(result);
+    result.forEach(element => {
+
+      console.log('\n', element.href, element.text.substring(0, 50));
+
+    });
+
   })
   .catch(console.error);
 
